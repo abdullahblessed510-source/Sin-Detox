@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sin Detox – A Short Guide to Returning to Allah</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap');
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--gold:#B8922A;--gold-light:#D4AA4A;--dark:#0D0D0B;--dark2:#141410;--dark3:#1C1C17;--text:#D8D0BC;--text-muted:#8A8478;--white:#F4F0E8}
+body{font-family:'Source Sans 3',sans-serif;background:var(--dark);color:var(--text);font-size:16px;line-height:1.85}
+.cover{min-height:100vh;background:#0D0D0B;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+.cover-image{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1466442929976-97f336a657be?w=1200&q=80');background-size:cover;background-position:center 30%;filter:brightness(0.2) saturate(0.4)}
+.cover-content{position:relative;z-index:2;padding:80px 80px 100px;max-width:900px}
+.cover-arabic{font-size:2rem;color:var(--gold);margin-bottom:28px}
+.cover h1{font-family:'Playfair Display',serif;font-size:5rem;font-weight:900;color:#fff;line-height:1.0;margin-bottom:10px}
+.cover h1 .accent{color:var(--gold)}
+.cover .sub-title{font-size:1.3rem;color:var(--text-muted);margin-top:20px;font-weight:300;letter-spacing:1px}
+.cover-line{width:80px;height:3px;background:var(--gold);margin:30px 0}
+.chapter-banner{position:relative;height:320px;overflow:hidden;display:flex;align-items:flex-end}
+.chapter-banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.2) saturate(0.3)}
+.chapter-banner-content{position:relative;z-index:2;padding:40px 80px;width:100%}
+.chapter-num{font-size:0.7rem;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.chapter-banner h2{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:#fff;line-height:1.2}
+.body-wrap{max-width:860px;margin:0 auto;padding:70px 60px}
+h3{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--white);margin:50px 0 16px;font-weight:700}
+h3::before{content:'';display:inline-block;width:20px;height:3px;background:var(--gold);vertical-align:middle;margin-right:12px}
+p{margin-bottom:20px;color:var(--text);font-size:1.02rem;font-weight:300}
+strong{color:var(--white);font-weight:600}
+.quote{border-left:4px solid var(--gold);background:var(--dark3);padding:28px 36px;margin:40px 0;border-radius:0 10px 10px 0}
+.quote p{font-style:italic;font-size:1.1rem;color:var(--white);margin-bottom:10px}
+.quote .source{font-size:0.8rem;color:var(--gold);font-style:normal;margin:0;letter-spacing:1px;text-transform:uppercase}
+.image-break{height:260px;overflow:hidden;border-radius:12px;margin:50px 0}
+.image-break img{width:100%;height:100%;object-fit:cover;filter:brightness(0.5) saturate(0.4)}
+.divider{display:flex;align-items:center;gap:16px;margin:50px 0}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:#2A2A1E}
+.divider-diamond{width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+.step{display:flex;gap:28px;background:var(--dark2);border:1px solid #252520;border-radius:12px;padding:32px;margin:28px 0}
+.step-number{flex-shrink:0;width:48px;height:48px;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--gold);margin-top:4px}
+.step-body h4{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--white);margin-bottom:12px}
+.step-body p{margin-bottom:12px}
+.day-header{background:var(--dark3);border-top:3px solid var(--gold);border-radius:12px 12px 0 0;padding:24px 32px 20px;margin-top:50px}
+.day-label{font-size:0.68rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.day-header h3{font-size:1.6rem;color:#fff;margin:0}
+.day-header h3::before{display:none}
+.day-body{background:var(--dark2);border:1px solid #1E1E18;border-top:none;border-radius:0 0 12px 12px;padding:28px 32px}
+.day-section{margin-bottom:24px}
+.day-section:last-child{margin-bottom:0}
+.day-label-sm{font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px}
+.dua-box{background:#0A0A08;border:1px solid #2A2A1A;border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:16px 22px;margin:14px 0}
+.dua-box p{font-size:0.88rem;color:#aaa;margin:0;font-style:italic}
+.checklist{list-style:none;margin:12px 0}
+.checklist li{padding:8px 0 8px 28px;position:relative;font-size:0.94rem;color:var(--text);border-bottom:1px solid #1a1a14;font-weight:300}
+.checklist li:last-child{border-bottom:none}
+.checklist li::before{content:'◆';position:absolute;left:0;color:var(--gold);font-size:0.55rem;top:13px}
+.closing{text-align:center;padding:100px 60px;background:linear-gradient(180deg,var(--dark) 0%,#0A0A06 100%);border-top:1px solid #1E1E14}
+.closing .arabic-large{font-size:2rem;color:var(--gold);margin-bottom:20px;line-height:1.6}
+.closing p{color:#666;max-width:520px;margin:0 auto 14px;font-size:0.92rem}
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="cover-image"></div>
+  <div class="cover-content">
+    <div class="cover-arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <h1><span class="accent">Sin</span><br>Detox</h1>
+    <div class="cover-line"></div>
+    <p class="sub-title">A Short Guide to Returning to Allah</p>
+    <p style="color:#444;font-size:0.78rem;letter-spacing:3px;text-transform:uppercase;margin-top:40px">Written as a reminder to myself first</p>
+  </div>
+</div>
+
+<!-- CHAPTER 1 -->
+<div class="chapter-banner">
+  <img src="https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=1200&q=80" alt="">
+  <div class="chapter-banner-content">
+    <div class="chapter-num">Chapter One</div>
+    <h2>Why You Keep Falling —<br>And What It Will Take to Stop</h2>
+  </div>
+</div>
+<div class="body-wrap">
+  <p>This is not a lecture. This is a mirror. If you picked this up, something inside you already knows that where you are is not where you want to be. That quiet discomfort is not weakness — it is your fitrah, the natural disposition Allah built into you, telling you that you were made for more.</p>
+  <p>Most young Muslims today are not failing because they stopped believing. They still believe. They are failing because they are fighting a serious war with zero strategy. They feel guilty after sinning, make a quick emotional promise, then fall again within days. The cycle repeats. The guilt accumulates. The heart grows heavier. And without dramatic announcement, a distance opens between them and Allah.</p>
+  <h3>Why Young Muslims Fall Into Repeated Sin</h3>
+  <p>You were born into the most relentlessly tempting era in human history, and nobody adequately prepared you for it. Every device in your pocket was engineered by teams of psychologists and neuroscientists to capture your attention and create compulsion. The people who design these systems spend hundreds of millions of dollars studying the precise triggers that make human beings unable to stop. They weaponized loneliness, boredom, social anxiety, and the need for validation — all against you.</p>
+  <p>Beyond the external war, there is the internal one. When a young person grows up without clear purpose, without a structured day, and without a living connection to Allah, the soul fills its emptiness with whatever is closest and most available. In this age, what is closest is almost entirely haram. Pornography is one search away. Mindless hours are built directly into your hand. The path of least resistance leads directly away from Allah — and nobody told you how steep that slope is until you were already sliding.</p>
+  <div class="quote">
+    <p>"Whoever does not find increase, will find decrease. And whoever finds decrease will not plateau — he will continue to fall."</p>
+    <p class="source">— Ibn al-Qayyim</p>
+  </div>
+  <h3>How Modern Distractions Weaken Iman</h3>
+  <p>Iman is not a switch. It is a living state of the heart requiring consistent nourishment. The scholars described it as increasing with obedience and decreasing with disobedience — and they lived in a world incomparably less distracting than ours. When four to six hours of your day are consumed by screens, the heart has no space to breathe. The remembrance of Allah, which is its food, gets crowded out. Reflection, which is its oxygen, is replaced with stimulation. The sweetness of salah becomes something to rush through. It does not happen dramatically. It happens the way a fire dies — not in one moment, but through slow starvation.</p>
+  <div class="image-break">
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80" alt="Mountain solitude">
+  </div>
+  <h3>Why Change Requires Discipline, Not Just Emotion</h3>
+  <p>You have felt the wave of emotion before — after a powerful khutbah, after a lecture that hit differently, after a moment of genuine fear about death. That surge of resolve is real and is a mercy from Allah. But you have also experienced what comes next: the emotion fades, life resumes, the same triggers appear, and without a system to support the intention, you fall again.</p>
+  <p>Emotion is the spark. Discipline is the engine. Change that lasts is not built on how you feel on a good day — it is built on what you do on a bad day. On the day you are tired. On the day the trigger is strong and motivation is gone. On the day nothing feels spiritually alive and you pray anyway. That consistency, built through habit and deliberate daily effort, is what actually transforms a person. This guide is not about making you feel inspired. It is about giving you a framework that works even when you do not feel inspired.</p>
+  <div class="divider"><div class="divider-diamond"></div></div>
+</div>
+
+<!-- CHAPTER 2 -->
+<div class="chapter-banner">
+  <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=1200&q=80" alt="">
+  <div class="chapter-banner-content">
+    <div class="chapter-num">Chapter Two</div>
+    <h2>The Struggles You Are<br>Actually Facing — Named Honestly</h2>
+  </div>
+</div>
+<div class="body-wrap">
+  <p>There is no benefit in speaking vaguely. These are the actual struggles most young Muslims face. Each is addressed directly, because you deserve honesty more than you deserve comfort.</p>
+  <h3>1. Pornography and the Failure to Lower the Gaze</h3>
+  <p>This is the most widespread and most deeply buried sin among Muslim youth today. It is rarely discussed in the masjid. And because of that silence, millions of young Muslims carry this alone — in a cycle of sin and shame that can last for years. Neurologically, pornography functions like a drug. It floods the brain with dopamine at levels that normal life cannot match, rewiring the reward circuitry so that real relationships and real life feel dull in comparison. It damages the capacity for genuine emotional intimacy, distorts how a person sees the opposite gender, and creates a persistent sense of being spiritually dirty that makes approaching Allah feel almost impossible.</p>
+  <p>The Prophet ﷺ said the eyes commit zina, and their zina is the gaze. Every time a person deliberately looks at something haram, a small spiritual betrayal occurs. When this is repeated thousands of times through pornography, the heart becomes callous to its own disobedience. The person may continue praying, continue fasting — but something essential is gone. The beginning is almost always gradual: an accidental exposure, then curiosity, then deliberate seeking, then habit. Shaytan does not need you to become an addict on day one. He only needs you to take the first step.</p>
+  <h3>2. Neglecting Salah</h3>
+  <p>The Prophet ﷺ said: <em>"The covenant between us and them is the prayer. Whoever abandons it has committed kufr."</em> This is not a metaphor. It is a direct, serious statement about the most important act of worship in Islam. Yet for many young Muslims, salah has become the most negotiable part of the day.</p>
+  <p>The neglect almost never begins with deliberate rejection. It begins with inconsistency — praying three prayers today, skipping one tomorrow, missing Fajr for weeks until missing Fajr becomes the default. It begins with distraction — rushing through the words without meaning, mind on everything except Allah. What makes this especially dangerous is that salah is not one ibadah among many. It is the axis around which all other worship revolves. When salah is strong, the entire relationship with Allah tends to hold. When it collapses, everything else collapses with it. A person who does not pray walks through every day entirely exposed — no connection, no anchor, no reminder that they are accountable. Shaytan does not need to do much after that.</p>
+  <h3>3. Social Media Addiction</h3>
+  <p>The average young person spends four to six hours daily on social media. In a year that is 1,500 to 2,000 hours. Compare that to the total time spent on salah, Quran, and genuine self-development. The disproportion is staggering. And it is entirely by design.</p>
+  <p>Social media was built to create psychological dependency. The infinite scroll removes natural stopping points. Variable reward — sometimes interesting content, sometimes not — creates the same compulsive checking seen in gambling. Social comparison triggers envy and insecurity. And the constant exposure to haram imagery slowly corrupts the heart's standards without the person even noticing. The most dangerous aspect is how normalized it is. When everyone around you is equally addicted, addiction does not feel like a problem — it feels like participation. For a young Muslim, the spiritual cost is severe: every hour spent mindlessly scrolling is an hour stolen directly from Allah.</p>
+  <h3>4. Haram Relationships</h3>
+  <p>The desire for love and companionship is not a flaw. It is one of the most beautiful aspects of how Allah created the human being. But pursuing it outside of Allah's design is where the destruction lies. Haram relationships — secret conversations, emotional dependency on a non-mahram, physical intimacy outside of marriage — do not deliver what they promise. They deliver the appearance of connection while building guilt, disordered attachment, and spiritual hollowness.</p>
+  <p>Many young people enter these situations with genuine intention: "we are serious," "we plan to marry." What they find is that the haram path corrupts the relationship itself before it even begins. Trust is built on a foundation of boundary violations. The heart that is feeding a haram attachment cannot pray with full presence — it knows the contradiction. It cannot turn fully to Allah while simultaneously nurturing something that displeases Him.</p>
+  <h3>5. Laziness and Absence of Purpose</h3>
+  <p>The Prophet ﷺ specifically sought refuge in Allah from laziness — naming it alongside grief, debt, and cowardice. He understood that a person without direction and internal drive is a person fully available for destruction. Laziness looks different for different people: sleeping until noon and missing Fajr; a fog of permanent procrastination; comfortable avoidance of anything difficult. But in all its forms, it produces the same result — a person whose time is not their own, because Shaytan has filled it by default.</p>
+  <p>The young person without a clear sense of mission is the one most vulnerable to every other sin on this list. Boredom is not neutral. It is an open door. And your best protection is not discipline alone — it is purpose. A clear picture of who you are trying to become creates an internal pressure that replaces the need for external rules.</p>
+  <div class="divider"><div class="divider-diamond"></div></div>
+</div>
+
+<!-- CHAPTER 3 -->
+<div class="chapter-banner">
+  <img src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84?w=1200&q=80" alt="">
+  <div class="chapter-banner-content">
+    <div class="chapter-num">Chapter Three</div>
+    <h2>The Mechanism of Sin —<br>Why It Is So Hard to Stop</h2>
+  </div>
+</div>
+<div class="body-wrap">
+  <h3>The Habit Loop</h3>
+  <p>Every habit follows the same structure: a cue that triggers a routine that delivers a reward. Over time, this loop becomes automated — running with minimal conscious involvement. For sinful behaviour, the loop is identical. You feel bored or lonely (cue). You access something haram (routine). You receive a brief hit of stimulation or relief (reward). The brain records this sequence. The next time the cue appears, the pull toward that routine is not just desire — it is a neurological pattern seeking completion. After months of repetition, breaking it through willpower alone is close to impossible. You are not fighting a bad decision in the moment. You are fighting a deeply encoded neural pathway.</p>
+  <div class="quote">
+    <p>"Verily, the heart rusts just as iron rusts when water touches it." When asked what polishes it, the Prophet ﷺ replied: "Remembering death frequently and reciting the Quran."</p>
+    <p class="source">— Prophet Muhammad ﷺ (Al-Bayhaqi)</p>
+  </div>
+  <h3>The Guilt Cycle</h3>
+  <p>Shaytan's most sophisticated trap turns the consequences of sin into a gateway for more sin. You sin. Guilt follows. The guilt produces unbearable emotional pain. The mind reaches for the fastest available relief — which is the same sin that started the cycle, because the brain has encoded it as the solution to emotional discomfort. This is why many people do not sin because they enjoy it anymore. They sin to escape the shame of having sinned before. It is a closed loop with no natural exit. Repeat it enough times and the person begins to believe they are beyond redemption — that they are just "that kind of person." This belief is Shaytan's most powerful weapon, because it replaces active struggle with passive surrender.</p>
+  <div class="image-break">
+    <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=1200&q=80" alt="">
+  </div>
+  <h3>Shaytan's Whispers — The Long Game</h3>
+  <p>Shaytan is described in the Quran as an enemy — not a nuisance, an enemy — who from the moment of his expulsion declared a structured campaign against the children of Adam. His method is patience and graduation. He does not ask you to abandon Islam on day one. He asks you to postpone one prayer — you are tired, just this once. He makes haram look attractive and obedience look burdensome. He exploits your specific weaknesses — things you are uniquely vulnerable to based on your history and personality. He is not a generic enemy. He knows what made you fall last time, and he files it away. Knowing this should not produce fear — it should produce strategy.</p>
+  <div class="quote">
+    <p>"Do not let Satan have authority over you. Indeed, he is to you a clear enemy."</p>
+    <p class="source">— Quran 36:60</p>
+  </div>
+  <h3>What Repeated Sin Does to the Heart</h3>
+  <p>The Prophet ﷺ described a spiritual reality: when a believer commits a sin, a black dot appears on the heart. If the person repents sincerely, the dot is removed. But if they continue — sin after sin, without tawbah — the dots accumulate until the heart is entirely covered. The Quran refers to this: <em>"No indeed! Rather, what they have been earning has covered their hearts."</em> (83:14)</p>
+  <p>When the heart reaches this state, it no longer responds normally to reminders of Allah. A person can hear Quran and feel nothing. Can stand in salah and feel empty. Can witness death and remain unmoved. The alarm system of the fitrah has been muted by accumulated sin. The fact that you still feel guilt — that something in you recognizes the problem — is evidence that your heart is still alive. That is a mercy from Allah. Do not waste it.</p>
+  <div class="quote">
+    <p>"The believer sees his sins as if he were sitting beneath a mountain, fearing it will fall upon him. The wicked person sees his sins as a fly that passes over his face."</p>
+    <p class="source">— Prophet Muhammad ﷺ (Bukhari)</p>
+  </div>
+  <div class="divider"><div class="divider-diamond"></div></div>
+</div>
+
+<!-- CHAPTER 4 -->
+<div class="chapter-banner">
+  <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&q=80" alt="">
+  <div class="chapter-banner-content">
+    <div class="chapter-num">Chapter Four</div>
+    <h2>The Sin Detox Framework —<br>Five Steps That Actually Work</h2>
+  </div>
+</div>
+<div class="body-wrap">
+  <p>These five steps form a complete, structured system. Apply them in order. When you fail — and you will — return to step one and begin again.</p>
+  <div class="step">
+    <div class="step-number">1</div>
+    <div class="step-body">
+      <h4>Make Proper Tawbah</h4>
+      <p>Proper tawbah has three conditions: genuine remorse before Allah — not just embarrassment, but actual sorrow for having disobeyed your Creator. Second, immediately ceasing the sin — not gradually, not by a future date, now. Third, a firm resolve backed by a plan not to return. If the sin involved wronging another person, making it right with them is a fourth condition. Do not wait for a perfect moment. Make tawbah now. When you fall again — make it again. Allah does not tire of forgiving the one who sincerely returns. His mercy is not exhausted by your repetition.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-number">2</div>
+    <div class="step-body">
+      <h4>Remove the Triggers Without Negotiation</h4>
+      <p>Conduct a trigger audit. What specific cues consistently lead you to sin? Being alone at night with your phone? Certain apps? Certain contacts? A particular mood? Identify the patterns and take structural action — not promises to "be more careful." Delete the apps. Set screen time locks with a password given to someone else. Unfollow every account that pushes haram. Remove certain contacts. The person who wants to change but refuses to remove the source of harm is not ready to change yet — they are in love with the feeling of wanting to change. Real change requires real sacrifice.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-number">3</div>
+    <div class="step-body">
+      <h4>Replace Bad Habits With Better Ones</h4>
+      <p>The brain does not simply stop needing the reward it was receiving. If you remove the sinful routine without replacing it, the cue will still fire — and the emptiness will create enormous pressure to return. The replacement must be genuinely engaging, not just "less sinful." Physical exercise is among the most powerful replacements — it addresses the same physiological restlessness that many sins are serving. A person who trains consistently, sleeps properly, and has a full productive structure has drastically less psychological need for haram stimulation.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-number">4</div>
+    <div class="step-body">
+      <h4>Rebuild the Daily Routine Around Salah</h4>
+      <p>Your daily schedule is either working for you or against you. There is no neutral position. Build everything around the five prayers. Wake for Fajr — not just to pray, but because the morning is the most spiritually and practically powerful part of the day. Sleep before midnight. Use the block between Fajr and sunrise for Quran, dhikr, and planning. Identify the two or three time slots where sin most often enters your day and fill them with specific, deliberate activity before the trigger has a chance to fire. When the day has shape, Shaytan has far less to work with.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-number">5</div>
+    <div class="step-body">
+      <h4>Strengthen Salah Until It Becomes Real</h4>
+      <p>Salah must transition from obligation to relationship. Begin with understanding — if you do not know what you are reciting, learn it. Memorize the meaning of Al-Fatiha deeply. When you know what you are saying, the words become impossible to rush. Gradually add nawafil. Use the last sujood of each prayer to make personal du'a in your own language about your actual struggles. That conversation, five times a day, will transform you — not quickly, but certainly and permanently.</p>
+    </div>
+  </div>
+  <div class="divider"><div class="divider-diamond"></div></div>
+</div>
+
+<!-- CHAPTER 5 -->
+<div class="chapter-banner">
+  <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=1200&q=80" alt="">
+  <div class="chapter-banner-content">
+    <div class="chapter-num">Chapter Five</div>
+    <h2>The 7-Day Reset Plan —<br>One Week to Build New Ground</h2>
+  </div>
+</div>
+<div class="body-wrap">
+  <p>Seven days will not transform you. But they will break inertia, establish new patterns, and prove to you that change is actually possible. Follow each day as written. Do not improvise until you have completed it once.</p>
+
+  <!-- DAY 1 -->
+  <div class="day-header">
+    <div class="day-label">Day One</div>
+    <h3>Tawbah — The Real Beginning</h3>
+  </div>
+  <div class="day-body">
+    <div class="day-section">
+      <div class="day-label-sm">The Focus</div>
+      <p>Before any habit can change, the heart must be honest. Day one is entirely about making a genuine, complete tawbah — not a summary repentance, but a full and deliberate return. This is the foundation. A building without a proper foundation will not hold. Do not rush this day.</p>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Action Steps</div>
+      <ul class="checklist">
+        <li>Find a time today when you are entirely alone — ideally after Asr or before Isha, when the soul tends to be more open.</li>
+        <li>Make a full, careful wudu. Be deliberate with every step. Be aware of what you are doing and why.</li>
+        <li>Pray two rak'ahs of Salat al-Tawbah — the prayer of repentance. This is sunnah and was specifically taught by the Prophet ﷺ as an act of formal return to Allah.</li>
+        <li>After the prayer, sit in silence for at least five minutes. Do not pick up your phone. Do not move immediately. Sit with the awareness of Allah's presence around you and inside your awareness.</li>
+        <li>Be specific in your mind about what you are repenting from. Not "all my sins" as a vague category — but the actual specific things that have been creating distance. Name them. Feel the weight of them. Then release them to Allah's mercy.</li>
+        <li>Say the Sayyidul Istighfar at least ten times slowly, understanding its meaning word by word.</li>
+        <li>Make a verbal commitment to yourself — not to be perfect, but to begin, and not to give up.</li>
+      </ul>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Dua for Today</div>
+      <div class="dua-box">
+        <p>اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ</p>
+        <p style="margin-top:10px;">"O Allah, You are my Lord. There is no god but You. You created me and I am Your servant. I am upon Your covenant and promise as much as I am able. I seek refuge in You from the evil of what I have done. I acknowledge Your blessing upon me, and I acknowledge my sin, so forgive me — for none forgives sins but You." (Sahih al-Bukhari — Sayyidul Istighfar)</p>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Evening Reflection</div>
+      <p><strong>What has my relationship with Allah actually looked like over the past three months — not what I hoped, but what it genuinely was? What specific things have created the most distance?</strong> Write the answer down if possible. Seeing it written makes it real in a way that thought alone cannot.</p>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day-header">
+    <div class="day-label">Day Two</div>
+    <h3>Environmental Surgery — Remove the Triggers</h3>
+  </div>
+  <div class="day-body">
+    <div class="day-section">
+      <div class="day-label-sm">The Focus</div>
+      <p>Your environment is either protecting you or attacking you — there is no neutral ground. Today you will conduct a deliberate audit of every digital and physical space that has been contributing to your sin, and take concrete action to change them. The person who claims to want change but refuses to remove the source of harm does not actually want change yet. They want the feeling of wanting to change. Real change has a cost.</p>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Action Steps</div>
+      <ul class="checklist">
+        <li><strong>Phone audit:</strong> Go through every single app. Delete anything that has been a consistent gateway to sin — social media apps if necessary, browsers with inappropriate bookmarks, any app you open compulsively rather than purposefully.</li>
+        <li><strong>Content audit:</strong> Go through who you follow on every platform. Unfollow every account — no matter how entertaining — that consistently places haram content in front of your eyes: immodest imagery, lifestyles that glorify disobedience, anything that feeds your specific weaknesses.</li>
+        <li><strong>Contacts:</strong> Identify anyone in your contacts who consistently pulls you toward haram behaviour or conversation. You may not need to delete everyone — but you need to create real distance from some people. Be honest.</li>
+        <li><strong>Screen time:</strong> Set a daily screen time limit using your phone's built-in controls. Set the override password as something random, write it on paper, and give that paper to a family member. Not knowing your own password removes the ability to override limits in moments of weakness.</li>
+        <li><strong>Phone at night:</strong> Decide tonight where your phone sleeps. Ideally: not in your bedroom. This single change removes the most dangerous window for most people — late night, alone, with a smartphone.</li>
+      </ul>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Dua for Today</div>
+      <div class="dua-box">
+        <p>اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الهَمِّ وَالحَزَنِ، وَالعَجْزِ وَالكَسَلِ، وَالجُبْنِ وَالبُخْلِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ</p>
+        <p style="margin-top:10px;">"O Allah, I seek refuge in You from worry and grief, from incapacity and laziness, from cowardice and miserliness, from being crushed by debt and overpowered by men." (Sahih al-Bukhari)</p>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Evening Reflection</div>
+      <p><strong>What was the hardest thing to delete or remove today? Why was it hard?</strong> The resistance you feel when removing something is proportional to how much power it has over you. If deleting an app feels genuinely painful, that pain is information — it tells you exactly how much of your attention has been captured by it.</p>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day-header">
+    <div class="day-label">Day Three</div>
+    <h3>Salah — Reclaiming the Pillar</h3>
+  </div>
+  <div class="day-body">
+    <div class="day-section">
+      <div class="day-label-sm">The Focus</div>
+      <p>Today is entirely about the five daily prayers. Not about adding extra worship yet. Not about becoming a scholar. Just five prayers — on time, with wudu, with presence. If you are currently not praying all five, today is the day you begin. If you are praying all five but rushing through them, today is the day you slow down and make them real.</p>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Action Steps</div>
+      <ul class="checklist">
+        <li><strong>Set all five alarms now</strong> — labeled with the prayer name. Set Fajr ten minutes before the prayer time so you can make wudu without rushing.</li>
+        <li><strong>Before each prayer today:</strong> Take sixty seconds before making takbir to remember where you are standing. You have been given a direct audience with the Creator and Sustainer of everything that exists. Enter with the awareness that deserves.</li>
+        <li><strong>In each prayer:</strong> Recite Al-Fatiha slowly, one verse at a time, with awareness of meaning. Even if the rest of the prayer remains imperfect — protect the Fatiha.</li>
+        <li><strong>In the last sujood of each prayer:</strong> After the required dhikr, pause for five seconds and say something personal to Allah. In Arabic or your own language — tell Him what you are struggling with today. Ask Him specifically.</li>
+        <li><strong>After each prayer:</strong> Do not immediately stand and pick up your phone. Remain seated for sixty seconds. Say Subhanallah (33), Alhamdulillah (33), Allahu Akbar (33). This takes two minutes and anchors the transition back into the day.</li>
+        <li>Take twenty minutes today to read the full translation and brief tafsir of Surah Al-Fatiha. You recite it a minimum of seventeen times daily. Knowing its meaning will permanently alter your experience of salah.</li>
+      </ul>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Dua for Today</div>
+      <div class="dua-box">
+        <p>رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي رَبَّنَا وَتَقَبَّلْ دُعَاءِ</p>
+        <p style="margin-top:10px;">"My Lord, make me an establisher of prayer, and from my descendants. Our Lord, and accept my supplication." — Quran 14:40 (the du'a of Prophet Ibrahim ﷺ)</p>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Evening Reflection</div>
+      <p><strong>Was I actually present in any of my prayers today? Which salah felt the most alive? Which felt the most mechanical? What was different between those two moments?</strong></p>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day-header">
+    <div class="day-label">Day Four</div>
+    <h3>Rebuild the Structure — Design Your Day</h3>
+  </div>
+  <div class="day-body">
+    <div class="day-section">
+      <div class="day-label-sm">The Focus</div>
+      <p>A day without structure is a day lived reactively — responding to whatever impulse or notification appears first. A day with structure is a day lived intentionally. Today you will design a realistic, honest daily schedule anchored around the five prayers. It does not need to be complex. It needs to be followed.</p>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Action Steps</div>
+      <ul class="checklist">
+        <li>Write out a simple 24-hour schedule on paper or in notes. Anchor every block around the five prayers. What happens before Fajr? Between Fajr and Dhuhr? Between Dhuhr and Asr? Asr and Maghrib? Maghrib and Isha? After Isha?</li>
+        <li><strong>Non-negotiable daily blocks:</strong> Fajr on time + 20 min Quran/dhikr after it. Minimum 30 min physical activity. All five prayers on time. Hard end to screen time at 10:00 PM. Isha followed by wind-down. Asleep by 11:30 PM latest.</li>
+        <li><strong>Critical point about Fajr:</strong> Plan to wake 20 minutes before the iqama — not at the iqama. Use those 20 minutes to make wudu and pray the two sunnah rak'ahs without rushing. The Prophet ﷺ described the two sunnah of Fajr as better than the world and everything in it. Guard them.</li>
+        <li>Identify the two or three time slots where sin most often enters your day. Build specific activities into those slots so the time is occupied before the trigger can fire.</li>
+        <li>Follow the schedule today. Not perfectly — follow it. When you miss a block, note it without excessive self-punishment, and resume at the next available block.</li>
+      </ul>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Dua for Today</div>
+      <div class="dua-box">
+        <p>اللَّهُمَّ بَارِكْ لَنَا فِي يَوْمِنَا وَاجْعَلْنَا مِنَ الشَّاكِرِينَ</p>
+        <p style="margin-top:10px;">"O Allah, bless us in our day and make us among the grateful."</p>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Evening Reflection</div>
+      <p><strong>Looking honestly at today — how much of it was productive and intentional, and how much was reactive and wasted? Where specifically did I lose control of my time? What would I protect differently tomorrow?</strong></p>
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="day-header">
+    <div class="day-label">Day Five — Friday</div>
+    <h3>Replace and Build — Give the Soul Something Real</h3>
+  </div>
+  <div class="day-body">
+    <div class="day-section">
+      <div class="day-label-sm">The Focus</div>
+      <p>Today begins the active building — not just removing. Jumu'ah makes this the ideal day. Your task is to identify what will replace your harmful habits, and to concretely begin one of those replacements today.</p>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Action Steps</div>
+      <ul class="checklist">
+        <li><strong>Attend Jumu'ah prayer.</strong> Arrive at least 30 minutes before the khutbah. Sit near the front if possible. Recite Surah Al-Kahf before or after the prayer — the Prophet ﷺ specifically recommended this on Fridays.</li>
+        <li>Write a list of three activities that are genuinely engaging, useful, and completely halal — things that build you and occupy the mind productively. A sport, a language, a trade, writing, physical training, a skill, a business — anything that makes you into a more capable and purposeful person.</li>
+        <li>Choose one of those three activities and begin it today — even for just 30 minutes. The goal on day one is not mastery. It is activation. Start today, not tomorrow.</li>
+        <li>After Jumu'ah, make personal du'a during the blessed hour on Friday afternoon (between Asr and Maghrib). The Prophet ﷺ described this as a time when du'a is answered. Use it. Ask specifically and sincerely for what you need Allah to give you and to remove from you.</li>
+        <li>Message one person who strengthens your deen — a friend, a brother, a mentor — and tell them you are working on yourself. You do not need to share details. Spoken accountability, even briefly, creates commitment that private intentions often cannot sustain alone.</li>
+      </ul>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Dua for Today (Friday)</div>
+      <div class="dua-box">
+        <p>اللَّهُمَّ إِنَّكَ عَفُوٌّ كَرِيمٌ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي</p>
+        <p style="margin-top:10px;">"O Allah, You are Pardoning and Generous, You love to pardon, so pardon me." (At-Tirmidhi — especially recommended on Fridays)</p>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Evening Reflection</div>
+      <p><strong>What am I actually trying to build in my life? Not just what I want to stop — but who do I genuinely want to become? What does that person's daily life look like? How far is my current life from that picture?</strong></p>
+    </div>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="day-header">
+    <div class="day-label">Day Six</div>
+    <h3>Knowledge and Company — The Two Wings</h3>
+  </div>
+  <div class="day-body">
+    <div class="day-section">
+      <div class="day-label-sm">The Focus</div>
+      <p>A bird needs two wings. For a Muslim, they are knowledge — which gives direction — and righteous company — which gives momentum. A young person making spiritual decisions without Islamic knowledge is fighting in the dark. A person whose entire social circle pulls them away from Allah is fighting gravity with no leverage.</p>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Action Steps</div>
+      <ul class="checklist">
+        <li>Spend at least 30 minutes today in genuine Islamic learning — not entertainment. Options: ten pages of a beneficial Islamic book (recommended: Purification of the Heart, The Ideal Muslim, Characteristics of the Hypocrites by Ibn al-Qayyim, or any classical work on the diseases of the heart); or a full scholarly lecture on a topic directly relevant to what you are working through.</li>
+        <li>Write down the names of the four or five people you spend the most time with. For each one, honestly ask: does this person make me more or less aware of Allah? Does their presence make obedience easier or harder? Be completely honest — not harsh, but honest.</li>
+        <li>If there is a study circle, halaqa, or Muslim brotherhood community accessible to you — attend something this week. The absence of righteous companionship is one of the most underestimated factors in the spiritual decline of young Muslim men and women.</li>
+        <li>Memorize one short hadith or one ayah today. Write it down physically. Put it somewhere you will see it daily — lock screen, mirror, notebook. Something about tawbah, or about the mercy of Allah, or about the heart.</li>
+      </ul>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Dua for Today</div>
+      <div class="dua-box">
+        <p>رَبِّ زِدْنِي عِلْمًا</p>
+        <p style="margin-top:10px;">"My Lord, increase me in knowledge." — Quran 20:114 (the only du'a in the entire Quran asking Allah for more of something — and He chose knowledge)</p>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Evening Reflection</div>
+      <p><strong>Who are the people closest to me right now — genuinely? Does my circle pull me toward Allah or away from Him? What is one change I could realistically make in the next 30 days to strengthen the quality of my social environment?</strong></p>
+    </div>
+  </div>
+
+  <!-- DAY 7 -->
+  <div class="day-header">
+    <div class="day-label">Day Seven</div>
+    <h3>Review, Recommit, and Build the Long Game</h3>
+  </div>
+  <div class="day-body">
+    <div class="day-section">
+      <div class="day-label-sm">The Focus</div>
+      <p>Day seven is not the end. It is the review of the beginning. Today you will conduct an honest assessment of the past six days — what changed, what did not, what you learned, and what your plan is going forward. The objective is not to feel good about the week. The objective is to extract what is working, understand what is failing, and build the structure for the next 30 days.</p>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Morning — Weekly Review (Before Touching Your Phone)</div>
+      <ul class="checklist">
+        <li>Pray Fajr and sit with a journal or notes app for 20 minutes before anything else. Do not check your phone first. This is non-negotiable.</li>
+        <li>Review each of the six days specifically. For each one: Did I complete the action step? If not — why not? What actually got in the way?</li>
+        <li>Identify the two moments this week where you felt closest to Allah. What made those moments possible? What were the conditions around them? Can you recreate those conditions regularly?</li>
+        <li>Identify the moment you came closest to falling back into old patterns. What triggered it? What did you do — or fail to do — in response? What would you do differently with the same situation?</li>
+        <li>Write down three specific habits from this week you will carry forward as non-negotiables for the next 30 days.</li>
+      </ul>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Afternoon — The 30-Day Commitment</div>
+      <p>Seven days begins the process. Thirty days is where real habit formation occurs. Using what you learned this week, write a simple 30-day commitment — not a complicated plan, but three to five core daily actions you will do every day for the next 30 days regardless of how you feel.</p>
+      <p>Suggested core commitments: All five prayers on time without exception. Minimum ten minutes of Quran daily. No accessing haram content at all. Physical exercise at least four days per week. In bed before midnight every night. These five things, done consistently for 30 days, will produce more genuine change than any amount of emotional motivation ever could. Track them simply — a grid or checklist for each day.</p>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Dua for Today</div>
+      <div class="dua-box">
+        <p>اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ</p>
+        <p style="margin-top:10px;">"O Allah, help me to remember You, to be grateful to You, and to worship You in the best manner." — Abu Dawud (the du'a the Prophet ﷺ taught Mu'adh ibn Jabal to say after every single salah)</p>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-label-sm">Evening — The Most Important Reflection of the Week</div>
+      <p><strong>Seven days ago, I decided to begin. What has actually shifted inside me this week — even if it is small? What is the single thing I am most grateful to Allah for in this week? And what is the one thing, more than anything else, that I must not give up going forward — the one thread I must hold onto even if everything else slips?</strong></p>
+      <p>End tonight with a long sujood. In that sujood, speak to Allah — in Arabic or your own language. Tell Him everything. Thank Him for the mercy that allowed you to reach this point. Ask Him for the strength to continue. Ask Him to make obedience beloved to your heart and disobedience ugly to it. Then stand up — and carry what you found in that sujood into tomorrow, and the day after, and the day after that.</p>
+    </div>
